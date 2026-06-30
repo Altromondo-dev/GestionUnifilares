@@ -1,0 +1,109 @@
+img {
+    position: relative;
+}
+
+.markerCursor {
+    /*cursor:url("../img/IconMark.png"), auto;*/
+}
+
+.textBlue {
+    color: #2b609a;
+    font-weight: bold;
+}
+
+.widthIcon .sapMImageContentImageIcon {
+    width: 30px !important;
+}
+
+.widthIcon.sapMImageContent {
+    height: 2.0rem !important;
+    width: 5rem !important;
+}
+
+html.sap-desktop .sapMImageContent:focus {
+    outline-style: none !important;
+}
+
+.drawImage {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 10;
+}
+
+.bloff {
+    z-index: 0 !important;
+}
+
+.imgA1 {
+    position: absolute;
+}
+
+.size1 {
+    font-size: 1.5rem;
+}
+
+.size2 {
+    font-size: 2.5rem;
+}
+
+.size3 {
+    font-size: 5rem;
+}
+
+.size4 {
+    font-size: 7.5rem;
+}
+
+.size5 {
+    font-size: 10rem;
+}
+
+.RedBox {
+    background: red;
+}
+
+.PurpleBox{
+	background: purple;
+}
+
+.BlueBox {
+    background: blue;
+}
+
+.YellowBox {
+    background: yellow;
+}
+
+.GreenBox {
+    background: green;
+}
+
+.btnResumen>.sapMBtnEmphasized {
+    background: #F3F3F3 !important;
+    color: #909497 !important;
+    border: 1px solid #F3F3F3 !important;
+    font-weight: normal !important;
+}
+
+.btnResumen .sapMBtnIcon {
+    color: #909497 !important;
+}
+
+@media (max-width:599px) {
+    .size1 {
+        font-size: 1rem;
+    }
+    .size2 {
+        font-size: 2rem;
+    }
+    .size3 {
+        font-size: 3rem;
+    }
+    .size4 {
+        font-size: 4rem;
+    }
+    .size5 {
+        font-size: 5rem;
+    }
+}

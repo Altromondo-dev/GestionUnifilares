@@ -1,0 +1,68 @@
+<core:FragmentDefinition 
+	xmlns="sap.m" 
+	xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core">
+    <Dialog title="Resumen de Marcadores" busyIndicatorDelay="0" contentWidth="{= !${device>/system/phone} ? '40%' : 'auto' }">
+        <content>
+            <IconTabBar>
+				<items>
+					<IconTabFilter text="Relacionados">
+						<Table items="{reviewSaveModel>/marcadores_nav}">
+			                <columns>
+			                    <Column width="7rem" hAlign="Center">
+			                        <Text text="Equipo" />
+			                    </Column>
+			                    <Column hAlign="Center">
+			                        <Text text="Marcador"/>
+			                    </Column>
+			                </columns>
+			                <items>
+			                    <ColumnListItem highlight="Information">
+			                        <cells>
+			                            <ObjectIdentifier title="{reviewSaveModel>Equipo}"/>
+			                            <ObjectAttribute text="{path: 'reviewSaveModel>Opcionseleccionada', formatter: '.formatOpcionSeleccionada'}" />
+			                        </cells>
+			                    </ColumnListItem>
+			                </items>
+			            </Table>
+					</IconTabFilter>
+					<IconTabFilter text="No Relacionados">
+						<Table items="{reviewSaveModel>/marcadoresnorel_nav}">
+			                <columns>
+			                    <Column width="8rem" hAlign="Center">
+			                        <Text text="Tipo"/>
+			                    </Column>
+			                    <Column hAlign="Center">
+			                        <Text text="Comentario"/>
+			                    </Column>
+			                </columns>
+			                <items>
+			                    <ColumnListItem highlight="Information">
+			                        <cells>
+			                            <ObjectIdentifier title="{path: 'reviewSaveModel>Tipomarcador', formatter: '.formatterTipoMarcadorNoRel'}"/>
+			                            <ObjectAttribute text="{reviewSaveModel>Comentario}" />
+			                        </cells>
+			                    </ColumnListItem>
+			                </items>
+			            </Table>
+					</IconTabFilter>
+					<IconTabFilter text="Seguridad de Terceros">
+						<VBox>
+							<Label text="Interruptor abierto y en local / extraído." design="Bold"/>
+							<TextArea enabled="false" width="100%" class="sapUiTinyMarginBottom" value="{reviewSaveModel>/IntAbLe}"/>
+							<Label text="Seccionador abierto bloqueado y trabado." design="Bold"/>
+							<TextArea enabled="false" width="100%" class="sapUiTinyMarginBottom" value="{reviewSaveModel>/SecAbBt}"/>
+							<Label text="Seccionador de PaT cerrado." design="Bold"/>
+							<TextArea enabled="false" width="100%" class="sapUiTinyMarginBottom" value="{reviewSaveModel>/SecPatCr}"/>
+							<Label text="PaT adicional" design="Bold"/>
+							<TextArea enabled="false" width="100%" class="sapUiTinyMarginBottom" value="{reviewSaveModel>/PatAdic}"/>
+						</VBox>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+        </content>
+        <buttons>
+            <Button text="Cerrar" press="onCloseRevieDialog"/>
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

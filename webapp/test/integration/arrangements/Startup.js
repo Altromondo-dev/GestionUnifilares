@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/Opa5"],function(t){"use strict";return t.extend("Transener.GestionUnifilares.test.integration.arrangements.Startup",{iStartMyApp:function(t){var n=t||{};n.delay=n.delay||50;this.iStartMyUIComponent({componentConfig:{name:"Transener.GestionUnifilares",async:true},hash:n.hash,autoWait:n.autoWait})}})});

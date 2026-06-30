@@ -1,0 +1,66 @@
+<mvc:View controllerName="Transener.GestionUnifilares.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages >
+				<Page id="page" class="textBlue " titleAlignment="Center" title="{DrawingModel>/textTitle}">
+					<headerContent>
+						<!--	
+						<Button icon="sap-icon://zoom-in" press=".zoomIn"/>
+						<Button icon="sap-icon://zoom-out" press=".zoomOut"/>-->
+						<!--DEV
+						<Image id="img1" src="/webapp/img/tension.svg" height="30px" width="30px" press=".addTensionIcon"/>
+						<Image id="img3" src="/webapp/img/teirra_adicional.svg" height="30px" width="30px" press=".addTierraAdicionalIcon"/>
+					-->
+					</headerContent>
+					<subHeader>
+						<OverflowToolbar>
+							<!--<HBox width="50%">
+								<Text text="{DrawingModel>/UT}"></Text>
+							</HBox>
+							<HBox width="50%">
+								<Button text="{ path:'DrawingModel>/referenceActivated', formatter: '.formatTextInfo' }"  icon="sap-icon://message-information" press=".handleOpenInfoTable" class="sapUiSmallMarginEnd"/>
+								<Text text="{ path:'DrawingModel>/isDrawing', formatter: '.formatTextDraw' }" class="sapUiTinyMarginTop"></Text>
+								<Button icon="sap-icon://signature" press=".handleDraw" class="sapUiSmallMarginEnd"/>
+								<Button id="medidasButon" type="Default" text="Medidas de Seguridad en Equipos de 3ros" press=".openThirdPartyEquipmentView"/>
+								<Button text="Guardar" press=".SaveUnifilar"/>
+								<Button icon="sap-icon://delete" press=".DeleteMarker"/>
+								<Image id="img1" src="../sap/fiori/gestionunifilares/img/tension.svg" height="30px" width="30px" press=".addTensionIcon"
+									placeholder="Tension"/>
+								<Link text="Agregar Tensión" press=".addTensionIcon" class="sapUiTinyMarginTop"/>
+								<Image id="img3" src="../sap/fiori/gestionunifilares/img/teirra_adicional.svg" height="30px" width="30px" placeholder="PaT adicional"
+									press=".addTierraAdicionalIcon"/>
+								<Link text="Agregar PaT adicional" press=".addTierraAdicionalIcon" class="sapUiTinyMarginTop"/>
+							</HBox>-->
+							<HBox width="50%">
+								<Text text="{DrawingModel>/UT}"></Text>
+							</HBox>
+							<HBox width="50%">
+								<ImageContent src="{ path:'DrawingModel>/isDrawing', formatter: '.formatImageDraw' }" class="widthIcon" width="50px" height="50px"
+									description="Dibujar Zona de Trabajo" press=".handleDraw"></ImageContent>
+								<ImageContent src="{ path:'DrawingModel>/handsOn', formatter: '.formatImageHands' }" class="widthIcon" width="50px" height="50px"
+									description="Medidas de Seguridad en equipos de terceros" press=".openThirdPartyEquipmentView"></ImageContent>
+								<ImageContent class="widthIcon" width ="50px" height="50px"  src="{ path:'imageModel>/images/guardar', formatter: '.getImagePath' }" description="Guardar unifilar"
+									press=".SaveUnifilar"></ImageContent>
+								<ImageContent class="widthIcon" width="50px" height="50px"  src="{ path:'imageModel>/images/tacho', formatter: '.getImagePath' }"
+ description="Eliminar"
+									press=".DeleteMarker"></ImageContent>
+								<ImageContent class="widthIcon" width="50px" height="50px" src="{ path:'imageModel>/images/tension', formatter: '.getImagePath' }" description="Tensión"
+									press=".addTensionIcon"></ImageContent>
+								<ImageContent class="widthIcon" width="50px" height="50px" src="{ path:'imageModel>/images/tierra_adic', formatter: '.getImagePath' }" description="PaT Adicional"
+									press=".addTierraAdicionalIcon"></ImageContent>
+								<ImageContent class="widthIcon" width="50px" height="50px" src="{ path:'imageModel>/images/referencia', formatter: '.getImagePath' }" description="Referencias"
+									press=".handleOpenInfoTable"></ImageContent>
+							</HBox>
+						</OverflowToolbar>
+					</subHeader>
+					<content>
+						<ScrollContainer width="100%" height="100%" vertical="true" focusable="true">
+							<core:HTML id="canvas"></core:HTML>
+						</ScrollContainer>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

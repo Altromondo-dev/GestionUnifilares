@@ -1,0 +1,1 @@
+sap.ui.define(["Transener/GestionUnifilares/controller/Main.controller"],function(n){"use strict";QUnit.module("Main Controller");QUnit.test("I should test the Main controller",function(t){var e=new n;e.onInit();t.ok(e)})});

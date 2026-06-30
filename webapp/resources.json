@@ -1,0 +1,187 @@
+{
+    "resources": [
+        {
+            "name": "img/hexagono.png"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "model/Ubicaciones.json"
+        },
+        {
+            "name": "utils/MessageBoxHelper.js"
+        },
+        {
+            "name": "services/oDataService.js"
+        },
+        {
+            "name": "services/UbicacionService.js"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "lib/fabric.min.js"
+        },
+        {
+            "name": "controller/Main.controller.js"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "utils/MessageBoxHelper-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "services/oDataService-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "services/UbicacionService-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "lib/fabric.min-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Main-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../sap-ui-version.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "img/menubut/tacho_basura.svg"
+        },
+        {
+            "name": "img/menubut/referencias.svg"
+        },
+        {
+            "name": "img/menubut/manos_red.svg"
+        },
+        {
+            "name": "img/menubut/manos.svg"
+        },
+        {
+            "name": "img/menubut/mano_linea_naranja.svg"
+        },
+        {
+            "name": "img/menubut/lapiz_verde.svg"
+        },
+        {
+            "name": "img/menubut/lapiz_azul_linea_naranja.svg"
+        },
+        {
+            "name": "img/menubut/lapiz_azul.svg"
+        },
+        {
+            "name": "img/menubut/guardar.svg"
+        },
+        {
+            "name": "view/Main.view.xml"
+        },
+        {
+            "name": "img/tension.svg"
+        },
+        {
+            "name": "img/teirra_adicional.svg"
+        },
+        {
+            "name": "img/rb5rb6.svg"
+        },
+        {
+            "name": "img/rb4.svg"
+        },
+        {
+            "name": "img/rb3.svg"
+        },
+        {
+            "name": "img/rb2.svg"
+        },
+        {
+            "name": "img/rb1.svg"
+        },
+        {
+            "name": "img/raytwoj.svg"
+        },
+        {
+            "name": "img/rayo_verde.svg"
+        },
+        {
+            "name": "img/rayo.svg"
+        },
+        {
+            "name": "img/rayo.png"
+        },
+        {
+            "name": "img/hexagono.svg"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "img/cosito_conector2.svg"
+        },
+        {
+            "name": "img/cosito_conector.svg"
+        },
+        {
+            "name": "img/conector2.png"
+        },
+        {
+            "name": "img/conector.png"
+        },
+        {
+            "name": "img/RO.jpg"
+        },
+        {
+            "name": "img/MJ.jpg"
+        },
+        {
+            "name": "img/IconMark.png"
+        },
+        {
+            "name": "img/EZ.jpg"
+        },
+        {
+            "name": "img/CP.jpg"
+        },
+        {
+            "name": "img/AB2.jpg"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "extended_runnable_file.html"
+        }
+    ]
+}
